@@ -56,12 +56,15 @@ export default function LazyImage({
   }
 
   useEffect(() => {
-    const adjustedImageSrc =
+    let adjustedImageSrc =
       adjustImgSize(src, maxWidth) || defaultPlaceholderSrc
 
     // 加载原图
     const img = new Image()
-    console.log("adjustedImageSrc"+adjustedImageSrc)
+    if (!adjustedImageSrc.includes("https://www.notion.so/")) {
+      adjustedImageSrc = adjustedImageSrc.replace(/&t=[^&]*/, '');
+    } 
+  console.log("adjustedImageSrc="+adjustedImageSrc)
     img.src = adjustedImageSrc
     img.onload = () => {
       setCurrentSrc(adjustedImageSrc)
