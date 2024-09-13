@@ -11,6 +11,7 @@ const ProductCard = ({ index, post, siteInfo }) => {
   if (post && !post.pageCoverThumbnail && CONFIG.POST_LIST_COVER_DEFAULT) {
     post.pageCoverThumbnail = siteInfo?.pageCover
   }
+  console.log("pageCoverThumbnail"+post?.pageCoverThumbnail)
 
   return (
 

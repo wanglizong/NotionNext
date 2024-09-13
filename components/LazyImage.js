@@ -161,25 +161,7 @@ const adjustImgSize = (src, maxWidth) => {
   const wRegex = /w=\d+/
 
   // 使用正则表达式替换 width/w 参数
-    // 使用正则表达式替换 width/w 参数
-    return removeTwitterParameter(src
-      .replace(widthRegex, `width=${screenWidth}`)
-      .replace(wRegex, `w=${screenWidth}`))
-}
-
-// 新增函数来移除 Twitter 的 &t= 参数
-const removeTwitterParameter = (url) => {
-  console.log("removeTwitterParameter"+url)
-  if (url.startsWith('/')) {
-    // 如果是相对路径，直接返回
-    return url;
-  }
-  try {
-    const urlObj = new URL(url);
-    urlObj.searchParams.delete('t');
-    return urlObj.toString();
-  } catch (error) {
-    console.error('Invalid URL:', url);
-    return url; // 如果 URL 无效，返回原始 URL
-  }
+  return src
+    .replace(widthRegex, `width=${screenWidth}`)
+    .replace(wRegex, `w=${screenWidth}`)
 }
