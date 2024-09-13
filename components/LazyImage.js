@@ -64,7 +64,7 @@ export default function LazyImage({
     if (!adjustedImageSrc.includes("https://www.notion.so/")) {
       adjustedImageSrc = adjustedImageSrc.replace(/&t=[^&]*/, '');
     } 
-  console.log("adjustedImageSrc="+adjustedImageSrc)
+  console.log("=====adjustedImageSrc======"+adjustedImageSrc)
     img.src = adjustedImageSrc
     img.onload = () => {
       setCurrentSrc(adjustedImageSrc)
