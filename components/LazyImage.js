@@ -161,7 +161,13 @@ const adjustImgSize = (src, maxWidth) => {
   const wRegex = /w=\d+/
 
   // 使用正则表达式替换 width/w 参数
-  return src
-    .replace(widthRegex, `width=${screenWidth}`)
-    .replace(wRegex, `w=${screenWidth}`)
+    // 使用正则表达式替换 width/w 参数
+    return removeTwitterParameter(src
+      .replace(widthRegex, `width=${screenWidth}`)
+      .replace(wRegex, `w=${screenWidth}`))
+}
+
+// 新增函数来移除 Twitter 的 &t= 参数
+const removeTwitterParameter = (url) => {
+  return url.split('&t=')[0]
 }
