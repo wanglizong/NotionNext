@@ -54,12 +54,12 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                   : '' +
                     'w-full md:w-5/12 overflow-hidden cursor-pointer select-none'
               }>
-              <LazyImage
+              {/* <LazyImage
                 priority={index === 0}
                 src={post?.pageCoverThumbnail}
                 alt={post?.title}
                 className='h-60 w-full object-cover group-hover:scale-105 group-hover:brightness-75 transition-all duration-300'
-              />
+              /> */}
             </div>
           </Link>
         )}
