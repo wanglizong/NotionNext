@@ -11,11 +11,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
 
   const showPreview =
     siteConfig('HEO_POST_LIST_PREVIEW', null, CONFIG) && post.blockMap
-  
-    // 添加打印语句
-    console.log('原始 pageCoverThumbnail:', post.pageCoverThumbnail)
-
-    if (
+  if (
     post &&
     !post.pageCoverThumbnail &&
     siteConfig('HEO_POST_LIST_COVER_DEFAULT', null, CONFIG)
@@ -54,12 +50,12 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
                   : '' +
                     'w-full md:w-5/12 overflow-hidden cursor-pointer select-none'
               }>
-              {/* <LazyImage
+              <LazyImage
                 priority={index === 0}
                 src={post?.pageCoverThumbnail}
                 alt={post?.title}
                 className='h-60 w-full object-cover group-hover:scale-105 group-hover:brightness-75 transition-all duration-300'
-              /> */}
+              />
             </div>
           </Link>
         )}
