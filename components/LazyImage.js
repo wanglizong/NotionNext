@@ -169,6 +169,7 @@ const adjustImgSize = (src, maxWidth) => {
 
 // 新增函数来移除 Twitter 的 &t= 参数
 const removeTwitterParameter = (url) => {
+  console.log(url)
   if (url.startsWith('/')) {
     // 如果是相对路径，直接返回
     return url;
