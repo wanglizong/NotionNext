@@ -11,7 +11,11 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
 
   const showPreview =
     siteConfig('HEO_POST_LIST_PREVIEW', null, CONFIG) && post.blockMap
-  if (
+  
+    // 添加打印语句
+    console.log('原始 pageCoverThumbnail:', post.pageCoverThumbnail)
+
+    if (
     post &&
     !post.pageCoverThumbnail &&
     siteConfig('HEO_POST_LIST_COVER_DEFAULT', null, CONFIG)

@@ -169,5 +169,7 @@ const adjustImgSize = (src, maxWidth) => {
 
 // 新增函数来移除 Twitter 的 &t= 参数
 const removeTwitterParameter = (url) => {
-  return url.split('&t=')[0]
+  const urlObj = new URL(url);
+  urlObj.searchParams.delete('t');
+  return urlObj.toString();
 }
