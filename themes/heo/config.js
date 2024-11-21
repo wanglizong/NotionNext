@@ -18,8 +18,8 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'share game',
-  HEO_HERO_TITLE_2: 'share software',
+  HEO_HERO_TITLE_1: 'share Game',
+  HEO_HERO_TITLE_2: 'share Software',
   HEO_HERO_TITLE_3: 'hotspotdaily.com',
   HEO_HERO_TITLE_4: 'hotspotdaily',
   HEO_HERO_TITLE_5: 'Recommended Resources',
