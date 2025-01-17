@@ -8,8 +8,8 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: 'Welcome to  HotSpotDaily', url: 'https://hotspotdaily.com/' },
-    { title: 'Share what you care about', url: 'https://hotspotdaily.com/' }
+    { title: '欢迎来到奥特曼官网', url: 'https://aoteman.org/' },
+    { title: '分享你了解到奥特曼知识', url: 'https://aoteman.org/' }
   ],
 
   // 英雄区左右侧组件颠倒位置
@@ -18,17 +18,18 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'share Game',
-  HEO_HERO_TITLE_2: 'share Software',
-  HEO_HERO_TITLE_3: 'hotspotdaily.com',
-  HEO_HERO_TITLE_4: 'hotspotdaily',
-  HEO_HERO_TITLE_5: 'Recommended Resources',
-  HEO_HERO_TITLE_LINK: 'https://hotspotdaily.com/recomment/',
+  HEO_HERO_TITLE_1: '奥特曼官网',
+  HEO_HERO_TITLE_2: '分享奥特曼知识',
+  HEO_HERO_TITLE_3: 'aoteman.org',
+  HEO_HERO_TITLE_4: '奥特曼家园欢迎你的到来',
+  HEO_HERO_TITLE_5: '奥特曼之家',
+  HEO_HERO_TITLE_LINK: 'https://aoteman.com/recomment/',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: 'Must-see selections', url: '/tag/see' },
-  HEO_HERO_CATEGORY_2: { title: 'Popular Articles', url: '/tag/hotarticles' },
-  HEO_HERO_CATEGORY_3: { title: 'Practical Tutorials', url: '/tag/tutorials' },
+  HEO_HERO_CATEGORY_1: { title: '奥特曼知识', url: '/tag/see' },
+  HEO_HERO_CATEGORY_2: { title: '奥特曼电影', url: '/tag/movie' },
+  HEO_HERO_CATEGORY_3: { title: '奥特曼头像', url: '/tag/img' },
+  HEO_HERO_CATEGORY_3: { title: '奥特曼卡片', url: '/tag/card' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
