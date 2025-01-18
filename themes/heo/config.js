@@ -29,7 +29,7 @@ const CONFIG = {
   HEO_HERO_CATEGORY_1: { title: '奥特曼知识', url: '/tag/see' },
   HEO_HERO_CATEGORY_2: { title: '奥特曼电影', url: '/tag/movie' },
   HEO_HERO_CATEGORY_3: { title: '奥特曼头像', url: '/tag/img' },
-  HEO_HERO_CATEGORY_3: { title: '奥特曼卡片', url: '/tag/card' },
+  HEO_HERO_CATEGORY_4: { title: '奥特曼卡片', url: '/tag/card' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
