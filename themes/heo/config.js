@@ -26,7 +26,7 @@ const CONFIG = {
   HEO_HERO_TITLE_LINK: 'https://aoteman.com/recomment/',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '奥特曼知识', url: '/tag/see' },
+  HEO_HERO_CATEGORY_1: { title: '单机游戏', url: '/tag/game' },
   HEO_HERO_CATEGORY_2: { title: '奥特曼电影', url: '/tag/movie' },
   HEO_HERO_CATEGORY_3: { title: '奥特曼头像', url: '/tag/img' },
   HEO_HERO_CATEGORY_4: { title: '奥特曼卡片', url: '/tag/card' },
